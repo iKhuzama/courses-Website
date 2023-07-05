@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Add Course</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<script src="script.js" defer></script>
+	</head>
+	<body>
+		<div class="containor">
+			<header>
+				<div class="navigation">
+					<nav>
+						<ul>
+							<li style="float: left"><h1>IT Department</h1></li>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="courses.php">Courses</a></li>
+							<li><a href="addCourse.html">Add Course</a></li>
+							<li><a href="about.html">About us</a></li>
+							<li><a href="contact.html">Contact us</a></li>
+							<li><a id="greeting"></a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+
+			<article>
+				<div class="content">
+					<h2>Add Course Form</h2>
+					<form method="post" action="./insert.php">
+						<p>
+							<label>
+								Course Name: <br />
+								<input type="text" name="cname" required />
+							</label>
+						</p>
+
+						<p>
+							<label>
+								Course ID: <br />
+								<input type="text" name="cid" required />
+							</label>
+						</p>
+
+						<p>
+							<label>
+								Level: <br />
+								<label><input type="radio" name="level" value="1" /> 1</label
+								><br />
+								<label><input type="radio" name="level" value="2" /> 2</label
+								><br />
+								<label><input type="radio" name="level" value="3" /> 3</label
+								><br />
+								<label><input type="radio" name="level" value="4" /> 4</label
+								><br />
+								<label><input type="radio" name="level" value="5" /> 5</label
+								><br />
+								<label><input type="radio" name="level" value="6" /> 6</label
+								><br />
+								<label><input type="radio" name="level" value="7" /> 7</label
+								><br />
+								<label><input type="radio" name="level" value="8" /> 8</label>
+							</label>
+						</p>
+
+						<p>
+							<input type="submit" value="Send" />
+							<input type="reset" value="Reset" />
+						</p>
+					</form>
+				</div>
+			</article>
+
+			<footer>
+				<p class="copyright">&copy; copyright2023</p>
+			</footer>
+		</div>
+	</body>
+</html>
